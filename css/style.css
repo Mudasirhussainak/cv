@@ -1,0 +1,321 @@
+/* body{
+      background-image:url("https://images.pexels.com/photos/1913226/pexels-photo-1913226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+     background-size: 3050px;
+         background-position:50%;
+     
+  }*/
+  /*welcome-heading*/
+  .welcome{
+    background-color: rgb(224, 224, 23);
+    padding: 3% 15%;
+  }
+  #heading{
+    color:#876445;
+    }
+    .gif1{
+      position: absolute;
+      right:25px;
+      top:5%;
+           width: 15rem;
+                   height: 15rem;
+    }
+      .mud{
+      color:#F15412;
+      }
+      p{
+       color:#D1512D;
+      }
+      .copy{
+    
+     color:#FF0063; 
+     text-align: center;
+    }
+    .copyheading{
+      text-align: center;
+      color: #0096FF;
+     
+      font-weight: normal;
+      }
+.headingimg{
+   height:428px;
+       width:428px;
+           border-radius: 100%;
+           object-fit: cover;
+            width: 20rem;
+            height: 20rem;
+
+       }
+       /*BOOK AND TEACHING*/
+    .books{
+        background-color: #ffff;
+     
+        padding:5% 15%;
+        margin-top: 10%;
+
+    }   
+    .bookheading{
+        color: rgb(10, 193, 10);
+        font: small-caps bold 24px/1 sans-serif;
+        text-align: center;
+    
+
+
+    }
+    .bookimg{
+    height: 10%;
+    width: 15%;
+    float: center;
+    border-radius: 100%;
+    
+
+      
+    }
+    .booksinformation{
+      color:rgb(9, 154, 220);
+font: italic 1.2em "Fira Sans", serif;
+ text-align:center;
+    }
+    
+                                  /*SKILL*/
+
+    .skill{
+      background-color: #ffff;
+      padding:5% 15%;
+      margin-top: 10%
+    }
+    .skillimg{
+      float:left;
+      border-radius: 0%;
+      width: 15rem;
+      height: 10rem;
+      padding-right: 2%;
+    }
+    .skillheading{
+      font: small-caps bold 24px/1 sans-serif;
+        text-align: center;
+        color: #FF5D5D;
+    }
+    .skillinformation{
+      color:#00FFAB;
+      font: italic 1.2em "Fira Sans", serif;
+       text-align:justify;
+    }
+                                      /*HOBBIES*/
+  .hobbies{
+    background-color: #ffff;
+    padding:5% 15%;
+    margin-top: 10%
+  }
+  .hobbieimg{
+    float:right;
+    /*transform: rotate(-10deg);*/
+    border-radius: 0%;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 0%;
+    margin-bottom: 10px;
+    
+  
+  }  
+  .hobbiesheading{
+    font: small-caps bold 30px/1 sans-serif;
+    text-align:justify;
+    color: #6FEDD6;
+  
+  }
+  .hobbiesinformation{
+
+    color:black;
+      font: italic 2em "Fira Sans", serif;
+       text-align:justify;
+       padding-left: 25%; 
+  }
+  .ol{
+    text-align: center;
+  }
+  /*desing*/
+  .desing{    
+    background-color: #fff;
+    padding:5% 15%;
+    margin-top: 10%
+  }
+  .desingimg{
+    float: center;
+    height: 30%;
+    width: 30%;
+    border-radius: 0%;
+    margin-left: 35%;
+
+
+  }
+        /*CONTACT*/
+  
+.contact{
+  padding:5% 15%;
+    margin-top: 10%;
+    background-color: #89CFFD;
+
+  }
+  /*FOOTER*/
+  .footer{
+    background-color: #89CFFD;
+
+
+  }
+  .footer{
+    color: #fff;
+  }
+  .footerpra{
+    color: #ffff;
+  }
+
+    .imgbook{
+     
+        height: 10px;
+        width: 20px;
+      text-align: center;
+      margin-left: 90px;
+      
+      
+      } 
+      /*NAVBAR*/
+      .navbar{
+        position: relative;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 0 4.5rem;
+      }
+      .navbar-brand{
+        font-size:2rem;
+      }
+      .navbar-toggler-icon{display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: middle;
+      content: "";
+      background: 50%/100% 100% no-repeat;
+      }
+      .nav-item{ padding: 0 18px;
+      }
+      .nav-link{
+        font-size: 1.2rem;
+        color:black ;
+      }
+      .navbar-imgicon{
+        vertical-align: middle;
+        margin-right: 10%;
+        height: 40px;
+        width: 40px;
+      }
+ hr{
+     border-style: none;
+      border-top-style: dotted;
+    border-width:5px;
+      width: 5%;
+  border-color:#E9DAC1;
+  }
+  h1{
+      
+  color:rgb(58, 16, 208);
+  }
+h2{
+  
+font: italic small-caps bold 16px/2 cursive;
+  color:#4700D8;
+  
+}
+/*
+h3{
+   text-align: center;
+  font: small-caps bold 24px/1 sans-serif;
+color:#e9151c;
+}
+*/
+/*
+li{
+  color:#fff;
+font: italic 1.2em "Fira Sans", serif;
+}
+*/
+
+  .skill{
+  font-size:2rem;
+      color:#EB4747;
+  }
+  /*love */
+  .button{text-decoration:none; text-align:center; 
+    padding:11px 32px; 
+    border:solid 1px #004F72; 
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px; 
+    border-radius: 4px; 
+    font:14px "Courier New", Courier, monospace; 
+    font-weight:bold; 
+    color:#d4f20e; 
+    background-color:#3BA4C7; 
+    background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%); 
+    background-image: -ms-linear-gradient(top, #3BA4C7 0% ,#1982A5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+    background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);   
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+     
+    text-shadow: -5px 7px 2px #bababa; 
+    filter: dropshadow(color=#bababa, offx=-5, offy=7);  -webkit-transition: background 0.13s linear;
+    -moz-transition:  background 0.13s linear;
+    -o-transition:  background 0.13s linear;
+    transition:  background 0.13s linear;}.button:hover{
+    padding:12px 13px; 
+    border:solid 3px #b324f0; 
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px; 
+    border-radius: 25px; 
+    font:14px Georgia, "Times New Roman", Times, serif; 
+    font-weight:bold; 
+    color:#d4f20e; 
+    background-color:#d9cc18; 
+    background-image: -moz-linear-gradient(top, #d9cc18 0%, #1982A5 100%); 
+    background-image: -webkit-linear-gradient(top, #d9cc18 0%, #1982A5 100%); 
+    background-image: -o-linear-gradient(top, #d9cc18 0%, #1982A5 100%); 
+    background-image: -ms-linear-gradient(top, #d9cc18 0% ,#1982A5 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 ); 
+    background-image: linear-gradient(top, #d9cc18 0% ,#1982A5 100%);   
+    -webkit-box-shadow:4px -5px 2px #1ce3cc;  -moz-box-shadow: 4px -5px 2px #1ce3cc;  box-shadow:4px -5px 2px #1ce3cc;  
+     
+    text-shadow: -5px 7px 2px #bababa; 
+    filter: dropshadow(color=#bababa, offx=-5, offy=7);}
+  .btn{
+background: #66BFBF; 
+background-image: -webkit-linear-gradient(top, #66BFBF, #d40a0a); 
+background-image: -moz-linear-gradient(top, #66BFBF, #d40a0a); 
+background-image: -ms-linear-gradient(top, #66BFBF, #d40a0a); 
+background-image: -0-linear-gradient(top, #66BFBF, #d40a0a); 
+background-image: linear-gradient(to bottom, #66BFBF, #d40a0a); 
+-webkit-border-radius: 28; 
+-moz-border-radius: 28; 
+border-radius: 28px; 
+font-family: Arial; 
+color: #66BFBF; 
+font-size: 30px; 
+padding: 5px 10px 5px 10px; 
+border: solid f628d 5px; 
+text-decoration: none; }
+.btn:hover { 
+background: #3cb0fd; 
+background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db); 
+background-image: -moz-linear-gradient(top, #3cb0fd, #3498db); 
+background-image: -ms-linear-gradient(top, #3cb0fd, #3498db); 
+background-image: -0-linear-gradient(top, #3cb0fd, #3498db); 
+background-image: linear-gradient(to bottom, #3cb0fd, #3498db); 
+text-decoration: none; }
+  .contact-me{
+        text-align: center;
+      
+  
+  }
+  
