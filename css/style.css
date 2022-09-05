@@ -5,6 +5,13 @@
      
   }*/
   /*welcome-heading*/
+ .welcome{
+    background-image: url('https://images6.alphacoders.com/454/thumb-1920-454816.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    padding: 3% 15%;
+  }
   .welcome{
     background-color: rgb(224, 224, 23);
     padding: 3% 15%;
@@ -223,7 +230,17 @@ font: italic 1.2em "Fira Sans", serif;
 h2{
   
 font: italic small-caps bold 16px/2 cursive;
-  color:#4700D8;
+  
+font: italic small-caps bold 20px/2 bold;
+color: #ffff;
+letter-spacing: 0.1em;
+text-shadow: 0 0 1px #e16609f4,
+             0 0 2px #ed1c09,
+             0 0 4px #eb6a08,
+             0 0 8px #f13005,
+             0 0 12px#0400ff;
+  
+  
   
 }
 /*
