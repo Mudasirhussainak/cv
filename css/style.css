@@ -16,8 +16,8 @@
       }
       body::-webkit-scrollbar-thumb {
         border-radius: 100px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-        background-color: #b6e313;
+/*        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); */
+        background-color: green;
       }
   /*welcome-heading*/
  .welcome{
@@ -238,6 +238,7 @@ font: italic 1.2em "Fira Sans", serif;
       width: 15rem;
       height: 10rem;
       padding-right: 2%;
+          margin-bottom:10px;
     }
     .skillheading{
       font: small-caps bold 24px/1 sans-serif;
