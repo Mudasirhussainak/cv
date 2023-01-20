@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>contact ME</title>
+    <!-------FONT ICON LINK--->
+    <script src="https://kit.fontawesome.com/c8ea7a3df5.js" crossorigin="anonymous"></script>
+
+    <!---BOOTSTRAP--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <a src="cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"></a>
+    <a src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></a>
+    </head>
+    
+    <style>
+        /*contact-me*/
+        .contact-me{
+            padding-left: 1%;
+            color: black;
+        }
+        .contacinformation{
+            padding-left: 12px;
+            color: #EB1D36;
+
+        }
+        .header{
+            background-color: #F5EDDC;
+
+        }
+        /*name*/
+        .name{
+            padding-left: 10px;
+            
+        }
+        /*submite*/
+        .submite{
+            padding-left: 6px;
+            padding-top: 5px;
+        }
+        /*socail-meadia*/
+        .socail-meadia{
+            padding-left: 45%;
+        }
+        .jitter{
+            height:60px;
+            width:60px;
+         margin-right: 10px;
+            
+            }
+        .snapchat{
+            height:190px;
+            width:190px;
+            margin-left: -10px;
+            border-radius: 100%;
+            
+             
+        }
+            .facebook{
+                
+                height:90px;
+                width:90px;
+                margin-left: 10px;
+
+                
+            }
+            .gif{
+                float: center;
+                padding-left: 25%;
+            } 
+         /*icon btn*/
+         .btn i{
+            line-height: 90px;
+            font-size: 30px;
+            transition: 0.2s linear;
+           }
+           .btn:hover i {
+               transform: scale(1.2);
+               color: blue;
+           }
+           /* .btn ::before{ 
+               content: "";
+               position: absolute;
+               width: 120%;
+               height: 120%;
+               background: #9d9ca3;
+               transform: rotate(45deg);
+               left: -110%;
+               top: 90%;
+            }  */
+           .btn:hover::before{
+               animation: aaa 0.7s 1;
+               top: -10%;
+               left: -10%;
+           }
+           @keyframes aaa{
+               0%{
+                   left: -110%;
+                   top: -30%;
+               }
+               50%{
+                   left: -10%;
+                   top: -30%;
+               }
+               100%{
+                   top: -10%;
+                   left: -10%;
+               }
+           }
+           .brand{
+            color: #EB1D36;
+           }
+           
+    
+    /*class snytax*/
+    
+   
+    hr{
+    border-style:none;
+    border-top-style: dotted;
+    border-width:5px;
+    width: 5%;
+    border-color:#E9DAC1;
+    }
+
+    /*End contact Section */
+
+/* Footer */
+ #footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+} 
+/* End Footer */
+
+   /* Keyframes */
+ @keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: crimson;
+		font-weight: 500;
+	}
+}
+/* End Keyframes */
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
+	h1.section-title {
+		font-size: 6rem;
+	} 
+}
+   
+    </style>
+    <body>
+           <!---navbar-->
+           <div class="header">
+        <div class="contact-me">
+        <h1 class="contact">MY CONTACT</h1>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+             
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#meadia" aria-current="page" >Socail Meadia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#mail">MAIL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!---CONTACT ME-->
+            <div class="contacinformation">
+    <p>SRINAGAR</p>
+    <p>EMAIL:hussainmudasir098@gmail.com</p>
+            </div>
+
+</div>
+<center>
+    <hr noshade>
+</center>
+    <!--- MESSAGE-->
+    <div class="name">
+    <form action="mailto:@hussainmudasir098@gmail.com">
+    <label>YOUR NAME:</label>
+    <input type="text"><br>
+    <label>YOUR EMAIL</label>
+    <input type="email"><br>
+    <label>YOUR MESSAGE</label><br>
+    <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
+    </form>
+</div>
+</div>
+          <!--SUBMITE--->
+    <div class="submite">
+    <!-- <a class="submite-btn" href="mailto:hussainmudasir098@email.com">SUBMITED</a>--->
+    <a class="btn btn-md btn-outline-warning" type="submit" href="#textarea" value="Submit">SUBMITED</a>
+    <!--- <button class="favorite styled"
+    type="button"> --->
+    <!-- <a class="btn btn-md btn-outline-danger" href="index.html">HOME</a> -->
+    <!---
+    </button>--->
+    <!---<button class="favorite styled"
+    type="button">--->
+    <a  id="mail" class="btn btn-md btn-outline-dark" href="mailto:hussainmudasir098@email.com">MAIL</a>
+    <!---</button>--->
+   
+</div>
+
+<marquee><h1>Sorry,Submited Button Not Working.If You Have Any Suggestion Or Anything Else You 
+    Can Mail Me.....
+</h1></marquee>
+
+<center>
+    <hr noshade>
+</center>
+                         <!------------SOCAIL MEADIA-------->
+    <!--- </button>--->
+    <div class="footer">
+   <!---- <div class="socail-meadia">
+    <img class="jitter" src="https://th.bing.com/th/id/R.dfc60440b0c68971821592604c57d420?rik=jglP6lQZD3i0gw&riu=http%3a%2f%2fholatelcel.com%2fwp-content%2fuploads%2f2017%2f11%2finstagram-stories.gif&ehk=g1oeRcuOVJbqtP%2bW0He8YTPm%2fCQU9wtPhEK%2b3iA6MNU%3d&risl=&pid=ImgRaw&r=0">
+    <img class="facebook" src="https://cliply.co/wp-content/uploads/2019/07/371907490_FACEBOOK_ICON_TRANSPARENT_400.gif">
+    <img class="snapchat url"  src="https://i.pinimg.com/originals/8b/c5/ac/8bc5acf32e129f61046d32b16ecdfad2.gif">
+    --->
+    <!-- <div  id ="meadia" class="socail-meadia">
+        <a class="btn" href="https://www.facebook.com/hussainy.mudasir" alt="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="" alt="snapchat">
+            <i class="fa-brands fa-square-snapchat"></i>
+        </a>
+        <a class="btn" href="" alt="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        
+    </div>
+    <hr>
+</div>-->
+    <img class="gif" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif"> 
+
+    <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>TH</span>ANKS <span>TO VISTING</span></h1>
+      </div>
+     <center>
+
+         <h2>This Is My Socail Meadia</h2>
+     </center> 
+      
+    
+     <div  id ="meadia" class="socail-meadia">
+        <a class="btn" href="https://www.facebook.com/hussainy.mudasir" alt="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="" alt="snapchat">
+            <i class="fa-brands fa-square-snapchat"></i>
+        </a>
+        <a class="btn" href="" alt="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        
+    </div>
+    <center>
+
+        <hr>
+    </center>
+
+      
+      <center>
+          
+          <p>Copyright © 2023 Mudasir. All rights reserved</p>
+      </center>
+    </div>
+    
+  </section>
+    </div>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+
+</body>
+
+    </html>
