@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <script>
-        let name="HY ☺.YOUR WELCOME,TO MY WEBSITE";
-        let yourname=prompt("Enter your name");
-        alert(name.replace("YOUR",yourname )); /*JAVAScript*/
+//         let name="HY ☺.YOUR WELCOME,TO MY WEBSITE";
+//         let yourname=prompt("Enter your name");
+//         alert(name.replace("YOUR",yourname )); /*JAVAScript*/
 //         name.replace("mudasir",you )
+        
+        
+var yourName =prompt("Enter Your Name");
+
+var name=yourName.slice(0,1);
+  name= name.toUpperCase();
+
+var loweCaseName=yourName.slice(1,yourName.length);
+loweCaseName= loweCaseName.toLowerCase();
+
+alert("Hello" + " "+ name + loweCaseName.slice(0,yourName.length)+" "+ "Welcome To My Website.");
+   
     </script>
 <head>
   <meta charset="UTF-8">
