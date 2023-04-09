@@ -9,6 +9,10 @@ loweCaseName= loweCaseName.toLowerCase();
 
 alert("Hello" + " "+ name + loweCaseName.slice(0,yourName.length)+" "+ "Welcome To My Website.");
 
+// var notes=document.getElementsByClassName("note")
+
+// n
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
