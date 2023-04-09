@@ -1,3 +1,14 @@
+ 
+var yourName =prompt("Enter Your Name");
+
+var name=yourName.slice(0,1);
+  name= name.toUpperCase();
+
+var loweCaseName=yourName.slice(1,yourName.length);
+loweCaseName= loweCaseName.toLowerCase();
+
+alert("Hello" + " "+ name + loweCaseName.slice(0,yourName.length)+" "+ "Welcome To My Website.");
+
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
