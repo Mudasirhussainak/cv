@@ -9,6 +9,9 @@ loweCaseName= loweCaseName.toLowerCase();
 
 alert("Hello" + " "+ name + loweCaseName.slice(0,yourName.length)+" "+ "Welcome To My Website.");
 
+ var notes=document.getElementById('note');
+notes.innerHTML="Hi."+yourName+" I Hope You Like This Website. I Am Thankfully To You .You Vist My Website......❤🤍💛";
+
 // var notes=document.getElementsByClassName("note")
 
 // n
