@@ -369,7 +369,7 @@ p {
     list-style: none;
     font-size: 16px;
     font-weight: bold;
-    padding: 0 30px;
+    padding: 0 50px;
     margin-bottom: 30px;
     cursor: pointer;
     position: relative;
@@ -380,11 +380,11 @@ p {
 .gallery-box ul li::after{
     content: "";
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: transparent;
     position: absolute;
     top: 8px;
-    left: -5px;
+    left: 20px;
 }
 .gallery-box .active::after{
     background: #e7c82f;
