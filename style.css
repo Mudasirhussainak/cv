@@ -271,64 +271,99 @@ p {
 /* End Hero Section */
 
 /* Services Section */
-#services .services {
-	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
+
+
+.row{
+    width: 80%;
+    min-height: 85vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-#services .service-top {
-	max-width: 500px;
-	margin: 0 auto;
+.col{
+    margin: 20px 0;
+    flex-basis: 50%;
+    min-width: 300px;
+    height: 100%;
+    position: relative;
 }
-#services .service-bottom {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
+
+.gallery-box img{
+    width: 100%;
+    border: 10px solid rgba(255,255, 255,0.2);
+    box-sizing: border-box;
 }
-#services .service-item {
-	flex-basis: 80%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(pexels-photo-949587.webp);/* Services Background Image*/
-	background-size: cover;
-	margin: 10px 5%;
-	position: relative;
-	z-index: 1;
-	overflow: hidden;
+.gallery-box ul{
+    color: #fff;
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-#services .service-item::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.9;
-	z-index: -1;
+.gallery-box ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
 }
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
+.gallery-box .active{
+    color: #e7c82f;
 }
-#services .service-item h2 {
-	font-size: 2rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+.gallery-box ul li::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: transparent;
+    position: absolute;
+    top: 8px;
+    left: -5px;
 }
-#services .service-item p {
-	color: white;
-	text-align: left;
+.gallery-box .active::after{
+    background: #e7c82f;
+
+}
+.small-icon1{
+    width: 15px;
+    position: absolute;
+    right: 200px;
+    top: -10px;
+    opacity: 0.3;
+}
+.small-icon2{
+    width: 25px;
+    position: absolute;
+    right: 200px;
+    bottom: -100px;
+    opacity: 0.3;
+}
+.small-icon3{
+    width: 25px;
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    opacity: 0.5;
+    transform: rotate(45deg);
+}
+
+.small-icon4{
+    width: 250px;
+    position: absolute;
+    top: 120px;
+    left: -150px;
+    opacity: 0.3;
+}
+.small-icon5{
+    width: 25px;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    opacity: 0.3;
+}
+.btns{
+	color: black;
 }
 /* End Services Section */
 
