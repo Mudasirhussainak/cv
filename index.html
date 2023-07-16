@@ -62,31 +62,27 @@
         <h1 class="section-title">GALL<span>E</span>RY</h1>
        
       </div>
-      
-      <div class="service-bottom">
+      <div class="row">
+        <div class="col">
 
-        <div class="service-item">
-          <h3>Snow_Beauty </h3>
-
-          
-          <img src="images\snow_1.jpg" alt="snow_1">
-        </div>
-        <div class="service-item">
-        
-          <h2>Snow</h2>
-          <img src="images\snow_2.jpg" alt="snow_2">
-        </div>
-        <div class="service-item">
-          <h2>Kids In Snow</h2>
-          <img src="images\kids_snow.jpg" alt="KIds">
-        </div>
-        <div class="service-item">
-        
-          <h2>Snow Man</h2>
-          <img src="images\Snow_Man.jpg" alt="snow_man">
-        </div>
-      </div>
     </div>
+        <div class="col">
+    <div class="gallery-box">
+        <img src="pic2.jpg" id="gallery">
+      <ul>
+        <li class="btns active">01</li>
+        <li class="btns ">02</li>
+        <li class="btns ">03</li>
+        <li class="btns ">04</li>
+      </ul>
+    </div>
+</div>
+    </div>
+
+
+</div>  
+  </section>
+
     
     
   </section>
@@ -205,6 +201,27 @@
   <!-- End Contact Section -->
 
   <script src="apps.js"></script> <!---JAvaSciprt Link-->
+        <script>
+    var btn=document.getElementsByClassName("btns")
+    var gallery=document.getElementById("gallery")
+    var images=new Array(
+        "pic1.jpg",
+        "pic2.jpg",
+        "pic3.jpg",
+        "pic4.jpg"
+
+
+    );
+    for(let i=0; i<btn.length; i++){
+        btn[i].onclick=function()
+        {
+            gallery.src=images[i];
+            let current=document.getElementsByClassName("active");
+           current[0].className = current[0].className.replace("active","");
+           this.className += "active";
+        };
+    }
+</script>
 </body>
     
 
