@@ -688,6 +688,17 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
+
+        /*Scrollbar */
+         body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:linear-gradient(red,blue,green,yellow);
+    border-radius:25px ;
+}
+      
 	/* End About */
 
 	/* contact  */
