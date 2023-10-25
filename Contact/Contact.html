@@ -15,20 +15,230 @@
     </head>
     
     <style>
-        /*contact-me*/
-        .contact-me{
-            padding-left: 1%;
+
+        *{
+            margin:0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #251d83;
+            background-image: radial-gradient(circle farthest-corner at 100% 0, #f09c33 0%, #f59234 4%, #f98736 7%,
+             #fd7b38 10%, #ff6e3c 14%, #ff5f41 18%, #ff4e46 21%, 
+            #ff384b 25%, #fd1851 29%, #f90059 32%, #f50062 36%, #f0006c 39%,
+             #e90077 43%, #ba2d7f 46%, #d70090 50%, #4e42d4 75%, #4e42d4 100%);
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #f8cced;
             color: black;
         }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .navbar a.icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .navbar.responsive {
+                position: relative;
+            }
+            .navbar.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .navbar.responsive .dropdown {
+                float: none;
+            }
+            .navbar.responsive .dropdown-content {
+                position: relative;
+            }
+            .navbar.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+
+
+    
+
+        .hero{
+            width: 100%;
+            height: 100vh;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        form{
+            width:120 ;
+            max-width: 600px;
+        }
+        
+        .input-group{
+            margin-bottom: 30px;
+            position: relative;
+        
+        }
+        .input-group i{
+            margin-right: 5px;
+
+        }
+       
+        input,textarea{
+            width: 100%;
+            padding: 10px;
+            outline: 0;
+            border: 1px solid #fff;
+            color: #fff;
+            background: transparent;
+            font-size: 25px;
+        }
+        
+        
+        
+        label{
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 10px;
+            color: #fff;
+            cursor: text;
+            transition: 0.2s;
+        }
+        
+        input:focus~label,
+        input:valid~label,
+        textarea:focus~label,
+        textarea:valid~label{
+            top:-35px;
+            font-size: 14px;
+        
+        }
+
+        
+        
+        
+        
+        /* .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        
+        .row .input-group{
+            flex-basis:48% */
+        /* } */
+        
+        button{
+            padding: 10px 0;
+            color: #fff;
+            outline: none;
+            background: transparent;
+            border: 1px solid #fff;
+            width: 100%;
+            cursor: pointer;
+        }
+        
+        button:hover{
+            color: aqua;
+            background-color: rgb(0, 136, 255);
+            border: 2px solid black;
+        }
+
+        body{
+
+            background-image: linear-gradient(rgba(0,0,0,0.4),#3351b5),url(pexels-photo-2150347.jpeg);
+            background-position:  center;
+            background-size: cover;
+
+        }
+        /*contact-me*/
+       
         .contacinformation{
+            font-size: 1.9rem ;
+            font-family: Georgia;
+            margin-top: 50px;
             padding-left: 12px;
-            color: #EB1D36;
+            color: #ffff;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-shadow: 0 0 10px #00b3ff,
+                     0 0 20px #00b3ff,
+                     0 0 40px #00b3ff,
+                     0 0 80px #00b3ff,
+                     0 0 120px #00b3ff;
+            
 
         }
-        .header{
-            background-color: #F5EDDC;
-
-        }
+        
         /*name*/
         .name{
             padding-left: 10px;
@@ -166,6 +376,8 @@
 } 
 /* End Footer */
 
+
+
    /* Keyframes */
  @keyframes hamburger_puls {
 	0% {
@@ -210,72 +422,137 @@
 		font-size: 6rem;
 	} 
 }
+
+
+.heading-contact{
+    
+    margin-top: 8rem;
+}
+.mycontact{
+    color: #fffbb8;
+    font-size: 60px;
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mycontact:hover{
+    color: #e38d15;
+
+}
+
+#mail{
+   
+    margin-left: 15px;
+    position: relative;
+    background: #fff;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: 0.5s;
+
+
+}
+
+#mail:hover{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+#mail::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 10%;
+    background: #994b00;
+}
+
+#mail span{
+    position: relative;
+    z-index: 1;
+
+}
+#mail i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+#mail i ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #27282c;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
    
     </style>
     <body>
-           <!---navbar-->
-           <div class="header">
-        <div class="contact-me">
-        <h1 class="contact">MY CONTACT</h1>
-        <nav class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-             
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#meadia" aria-current="page" >Socail Meadia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#mail">MAIL</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+        <div class="navbar" id="myNavbar">
+            <a href="#home">Home</a>
+            <a href="#mail">Mail</a>
+            <a href="#meadias">Socail Meadia</a>
+            <a href="#name">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <div class="heading-contact">
+            <h3 class="mycontact">My Contact</h3>
+        </div>
         <!---CONTACT ME-->
             <div class="contacinformation">
+                <!-- <div class="semicircle"></div> -->
+
     <p>SRINAGAR</p>
     <p>EMAIL:hussainmudasir098@gmail.com</p>
-            </div>
 
-</div>
+            </div>
+            <a  id="mail"  href="mailto:hussainmudasir098@email.com" style="--clr:#62ff3e"><span>MAIL</span><i></i></a>
+
+
+
 <center>
     <hr noshade>
 </center>
     <!--- MESSAGE-->
-    <div class="name">
-    <form action="mailto:@hussainmudasir098@gmail.com">
-    <label>YOUR NAME:</label>
-    <input type="text"><br>
-    <label>YOUR EMAIL</label>
-    <input type="email"><br>
-    <label>YOUR MESSAGE</label><br>
-    <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
-    </form>
-</div>
-</div>
-          <!--SUBMITE--->
-    <div class="submite">
-    <!-- <a class="submite-btn" href="mailto:hussainmudasir098@email.com">SUBMITED</a>--->
-    <a class="btn btn-md btn-outline-warning" type="submit" href="#textarea" value="Submit">SUBMITED</a>
-    <!--- <button class="favorite styled"
-    type="button"> --->
-    <!-- <a class="btn btn-md btn-outline-danger" href="index.html">HOME</a> -->
-    <!---
-    </button>--->
-    <!---<button class="favorite styled"
-    type="button">--->
-    <a  id="mail" class="btn btn-md btn-outline-dark" href="mailto:hussainmudasir098@email.com">MAIL</a>
-    <!---</button>--->
-   
-</div>
+    <div class="hero">
+        <form >
+           <div class="row">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name"><i class="fa-regular fa-user fa-beat fa-sm"></i>Your Name</label>
+            </div>
+           
+           </div>
+           
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email"> <i class="fa-regular fa-envelope fa-beat fa-sm"></i>Email Id</label>
+            </div>
+            <div class="input-group">
+                <textarea  id="message" row="8" required ></textarea>
+                <label for="message"><i class="fa-regular fa-message fa-beat fa-sm"></i>Your Message</label>
+            </div>
+            <button type="submit">SUBMIT <i class="fa-regular fa-paper-plane fa-beat-fade"></i></button>
+        </form>  
+        </div>
 
-<marquee><h1>Sorry,Submited Button Not Working.If You Have Any Suggestion Or Anything Else You 
+<!-- <marquee><h1>Sorry,Submited Button Not Working.If You Have Any Suggestion Or Anything Else You 
     Can Mail Me.....
-</h1></marquee>
+</h1></marquee> -->
 
 <center>
     <hr noshade>
@@ -302,11 +579,11 @@
     </div>
     <hr>
 </div>-->
-<!--     <img class="gif" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif">  -->
+    <!-- <img class="gif" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif">  -->
 
     <!-- Footer -->
   <section id="footer">
-    <div class="footer container">
+    <div class="footer ">
       <div class="brand">
         <h1><span>TH</span>ANKS <span>TO VISTING</span></h1>
       </div>
@@ -317,7 +594,7 @@
       
     
      <div  id ="meadia" class="socail-meadia">
-        <a class="btn" href="https://www.facebook.com/hussainy.mudasir" alt="facebook">
+        <a class="btn" id="meadias" href="https://www.facebook.com/hussainy.mudasir" alt="facebook">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a class="btn" href="" alt="snapchat">
@@ -342,8 +619,20 @@
     
   </section>
     </div>
+           
   <!-- End Footer -->
   <script src="./app.js"></script>
+  <script>
+    function myFunction() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
+
 
 </body>
 
