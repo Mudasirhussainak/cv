@@ -203,6 +203,37 @@ p {
 }
 /* End Header section */
 
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #333;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown-content li a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+}
+
+.dropdown-content li a:hover {
+  background: #444;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hover effect on main button */
+.dropbtn:hover {
+  background: #444;
+}
+
 /* Hero Section */
 #hero {
 	background-image: url(night.jpg);  /* Top Bacground Image*/
